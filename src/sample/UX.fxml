@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/myStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+       <MenuBar fx:id="MainMenu" BorderPane.alignment="CENTER">
+           <Menu fx:id="File" mnemonicParsing="false" style="fx-padding: 5;" text="File">
+            <MenuItem fx:id="LoadKeyFile" mnemonicParsing="false" onAction="#onLoadKeyClick" text="Load Keyfile" />
+            <MenuItem fx:id="Save" mnemonicParsing="false" onAction="#onSave" text="Save" />
+            <MenuItem fx:id="SavePath" mnemonicParsing="false" onAction="#onSaveAsClick" text="Save As" />
+               <MenuItem fx:id="Close" mnemonicParsing="false" onAction="#onCloseClick" text="Close" />
+            <MenuItem fx:id="Open" mnemonicParsing="false" onAction="#onOpen" text="Open" />
+           </Menu>
+           <Menu fx:id="Edit" mnemonicParsing="false" style="fx-padding: 5;" text="Edit">
+               <MenuItem fx:id="Delete" mnemonicParsing="false" text="Delete" />
+           </Menu>
+           <Menu fx:id="ActionsMenu" mnemonicParsing="false" text="Actions">
+               <MenuItem fx:id="genKeys" mnemonicParsing="false" onAction="#onGenKeyClick" text="Generate Keys"/>
+               <MenuItem fx:id="Encrypt" mnemonicParsing="false" onAction="#onEncryptClick" text="Encrypt"/>
+               <MenuItem fx:id="Decrypt" mnemonicParsing="false" onAction="#onDecryptClick" text="Decrypt"/>
+           </Menu>
+           <Menu mnemonicParsing="false" style="fx-padding: 5;" text="About">
+               <MenuItem fx:id="About" mnemonicParsing="false" text="About" />
+           </Menu>
+       </MenuBar>
+   </top>
+   <center>
+       <SplitPane fx:id="SplitPane" dividerPositions="0.5" prefHeight="160.0" prefWidth="200.0" style="-fx-background-color: #D8DEE9; -fx-border-color: #D8DEE9; -fx-padding: 2;" BorderPane.alignment="CENTER">
+           <AnchorPane fx:id="AnchorPaneWithInput" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <TextArea id="areaInput" fx:id="TextAreaInput" prefHeight="369.0" prefWidth="242.0" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+           </AnchorPane>
+           <AnchorPane fx:id="AnchorPaneWithOutput" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <TextArea id="areaOutput" fx:id="OutputField" editable="false" opacity="0.5" prefHeight="369.0" prefWidth="348.0" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+           </AnchorPane>
+       </SplitPane>
+   </center>
+</BorderPane>

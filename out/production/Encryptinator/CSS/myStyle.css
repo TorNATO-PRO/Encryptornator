@@ -1,0 +1,68 @@
+// implementing Nord Theme Colors
+
+.menu-bar {
+    -fx-background-color: #2E3440;
+    -fx-focus-color: #0093ff;
+    -fx-padding: 5;
+}
+
+.menu-bar .label {
+    -fx-text-fill: #E5E9F0;
+}
+
+.menu:hover {
+    -fx-background-color: #3B4252;
+}
+
+.menu:focused {
+    -fx-background-color: #3B4252;
+}
+
+.menu:showing {
+    -fx-background-color: #3B4252;
+}
+
+.menu-item .label {
+    -fx-text-fill: #E5E9F0;
+}
+
+.menu-item:focused {
+     -fx-background-color: #3B4252;
+}
+
+.menu-item {
+    -fx-background-color: #2E3440;
+}
+
+.context-menu {
+    -fx-background-color: #2E3440;
+}
+
+.split-pane:horizontal > .split-pane-divider {
+   -fx-background-color: transparent;
+}
+
+#areaInput {
+    -fx-background-color: #ECEFF4;
+}
+
+#areaInput .content {
+    -fx-background-color: #ECEFF4;
+}
+
+#areaInput .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+#areaOutput {
+    -fx-background-color: #4C566A;
+    -fx-text-fill: #ECEFF4;
+}
+
+#areaOutput .content {
+   -fx-background-color: #4C566A;
+}
+
+#areaOutput .scroll-pane {
+    -fx-background-color: transparent;
+}
